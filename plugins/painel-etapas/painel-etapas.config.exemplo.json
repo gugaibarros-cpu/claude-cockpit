@@ -1,0 +1,7 @@
+{
+  "etapas": "diretor/etapas.json",
+  "repos": ["dono/repositorio"],
+  "intervaloSegundos": 60,
+  "relatorios": "relatorios",
+  "fila": ""
+}

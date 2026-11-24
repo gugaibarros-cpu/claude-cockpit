@@ -1,0 +1,46 @@
+{
+  "name": "painel-etapas",
+  "version": "0.1.0",
+  "author": { "name": "gugaibarros-cpu" },
+  "license": "MIT",
+  "description": "Painel vivo de etapas (organograma com barras de progresso, atualizado pelo GitHub), fila do diretor e aba Agora com subagentes, tarefas e relatorios .status",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "configFile": {
+      "type": "string",
+      "title": "Arquivo de configuracao",
+      "description": "Caminho do painel-etapas.config.json. Vazio: procura painel-etapas.config.json na pasta da sessao; se nao achar, usa os campos abaixo.",
+      "default": ""
+    },
+    "etapas": {
+      "type": "string",
+      "title": "etapas.json",
+      "description": "Caminho do etapas.json (a fonte do organograma). O etapas-status.json e gerado ao lado dele.",
+      "default": ""
+    },
+    "repos": {
+      "type": "string",
+      "title": "Repositorios do gh pr list",
+      "description": "dono/repo separados por virgula. Vazio: usa o campo repo do etapas.json.",
+      "default": ""
+    },
+    "intervaloSegundos": {
+      "type": "number",
+      "title": "Intervalo de regeneracao (s)",
+      "description": "De quanto em quanto tempo roda o gerador (le o GitHub). Minimo 15.",
+      "default": 60
+    },
+    "relatorios": {
+      "type": "string",
+      "title": "Pasta dos relatorios .status",
+      "description": "Pasta com NN-nome.status e NN-nome.md, lida pela aba Agora. Vazio: a aba mostra so agentes e tarefas.",
+      "default": ""
+    },
+    "fila": {
+      "type": "string",
+      "title": "fila.json do diretor (opcional)",
+      "description": "Caminho do fila.json. Vazio: a aba Fila do diretor some.",
+      "default": ""
+    }
+  }
+}
