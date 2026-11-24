@@ -1,11 +1,11 @@
 {
-  "name": "gugaibarros-plugins",
+  "name": "claude-cockpit",
   "owner": { "name": "gugaibarros-cpu" },
   "plugins": [
     {
       "name": "painel-etapas",
       "source": "./plugins/painel-etapas",
-      "description": "Painel de etapas, fila do diretor e aba Agora (subagentes e relatórios) para acompanhar o que roda na sessão."
+      "description": "Painel de etapas, fila de pedidos e aba Agora (subagentes e relatórios) para acompanhar o que roda na sessão."
     }
   ]
 }
